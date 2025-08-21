@@ -26,6 +26,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 span {
@@ -34,9 +35,9 @@ span {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0px;
-    text-align: top;
     text-align: center;
     color: rgba(30, 14, 98, 1);
+    vertical-align: top;
 }
 
 .heading {
@@ -132,8 +133,8 @@ span {
     vertical-align: middle;
     color: rgba(30, 14, 98, 1);
     text-align: center;
-    width: 230;
-    height: 50;
+    max-width: 230px;
+    min-height: 50px;
     opacity: 1;
     border-radius: 100px;
     align-items: center;
@@ -150,8 +151,8 @@ span {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(37, 218, 197, 1);
     text-align: center;
-    width: 230;
-    height: 50;
+    max-width: 230px;
+    min-height: 50px;
     opacity: 1;
     border-radius: 100px;
     align-items: center;
@@ -175,4 +176,21 @@ th {
     text-align: center;
     color: rgba(30, 14, 98, 1);
     margin: 0;
+}
+
+@media (max-width:576px) {
+    .amount {
+        font-size: 40px;
+    }
+
+    .heading {
+        font-size: 10px;
+    }
+
+    .para {
+        font-size: 8px;
+    }
+    .first-col{
+        font-size: 10px;
+    }
 }
